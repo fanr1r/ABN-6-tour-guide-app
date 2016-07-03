@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="city_name">Kiel</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="events">Events</string>
+    <string name="interest_points">Interest points</string>
+    <string name="ferry_stations">Ferry stations</string>
+</resources>

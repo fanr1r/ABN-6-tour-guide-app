@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/interest_points"
+        style="@style/CategoryStyle"
+        android:background="@color/category_interest_points"
+        android:text="@string/interest_points" />
+
+    <TextView
+        android:id="@+id/events"
+        style="@style/CategoryStyle"
+        android:background="@color/category_events"
+        android:text="@string/events" />
+
+    <TextView
+        android:id="@+id/ferry_stations"
+        style="@style/CategoryStyle"
+        android:background="@color/category_ferry_stations"
+        android:text="@string/ferry_stations" />
+
+    <TextView
+        android:id="@+id/restaurants"
+        style="@style/CategoryStyle"
+        android:background="@color/category_restaurants"
+        android:text="@string/restaurants" />
+
+</LinearLayout>

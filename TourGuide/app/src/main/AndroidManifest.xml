@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.fanrir.tourguide"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/city_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RestaurantsActivity"
+            android:label="@string/restaurants"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/events"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".InterestPointsActivity"
+            android:label="@string/interest_points"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".FerryStationsActivity"
+            android:label="@string/ferry_stations"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>
