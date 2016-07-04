@@ -14,16 +14,16 @@ public class InterestPointsActivity extends AppCompatActivity {
         setContentView(R.layout.location_details_list);
 
         ArrayList<LocationInformation> words = new ArrayList<>();
-        words.add(new LocationInformation(R.drawable.a_marine_ehrenmahl_laboe, "Marine Ehrenmal Laboe", "Strandstraße 92, 24235 Laboe"));
-        words.add(new LocationInformation(R.drawable.b_zoologisches_museum_kiel, "Zoologisches Museum Kiel", "Hegewischstraße 3, 24105 Kiel"));
-        words.add(new LocationInformation(R.drawable.c_u_995, "U 995", "Strandstraße 92, 24235 Laboe"));
-        words.add(new LocationInformation(R.drawable.d_aquarium_geomar, "Aquarium GEOMAR", "Düsternbrooker Weg 20, 24105 Kiel"));
-        words.add(new LocationInformation(R.drawable.e_alter_botanischer_garten, "Alter Botanischer Garten", "Schwanenweg 14, 24105 Kiel"));
-        words.add(new LocationInformation(R.drawable.f_kieler_foerde, "Kieler Förde", "Kielline"));
-        words.add(new LocationInformation(R.drawable.g_sparkassen_arena, "Sparkassen-Arena", "Europapl. 1, 24103 Kiel"));
-        words.add(new LocationInformation(R.drawable.h_schwentine, "Schwentine", "Holstein"));
-        words.add(new LocationInformation(R.drawable.i_holstein_stadion, "Holstein Stadion", "Westring 501, 24106 Kiel"));
-        words.add(new LocationInformation(R.drawable.j_postsee, "Postsee", "Preetz"));
+        words.add(new LocationInformation(R.drawable.a_marine_ehrenmahl_laboe, getString(R.string.marine), getString(R.string.marine_adress)));
+        words.add(new LocationInformation(R.drawable.b_zoologisches_museum_kiel, getString(R.string.zoo), getString(R.string.zoo_adress)));
+        words.add(new LocationInformation(R.drawable.c_u_995, getString(R.string.submarine), getString(R.string.submarine_adress)));
+        words.add(new LocationInformation(R.drawable.d_aquarium_geomar, getString(R.string.aquarium), getString(R.string.aquarium_adress)));
+        words.add(new LocationInformation(R.drawable.e_alter_botanischer_garten, getString(R.string.old_garden), getString(R.string.old_garden_adress)));
+        words.add(new LocationInformation(R.drawable.f_kieler_foerde, getString(R.string.foerde), getString(R.string.foerde_adress)));
+        words.add(new LocationInformation(R.drawable.g_sparkassen_arena, getString(R.string.arena), getString(R.string.arena_adress)));
+        words.add(new LocationInformation(R.drawable.h_schwentine, getString(R.string.schwentine), getString(R.string.schwentine_adress)));
+        words.add(new LocationInformation(R.drawable.i_holstein_stadion, getString(R.string.stadion), getString(R.string.stadion_adress)));
+        words.add(new LocationInformation(R.drawable.j_postsee, getString(R.string.lake), getString(R.string.lake_adress)));
 
         LocationInformationAdapter itemsAdapter = new LocationInformationAdapter(this, words, R.color.category_interest_points);
 

@@ -14,17 +14,17 @@ public class FerryStationsActivity extends AppCompatActivity {
         setContentView(R.layout.location_details_list);
 
         ArrayList<LocationInformation> words = new ArrayList<>();
-        words.add(new LocationInformation("Bahnhof", ""));
-        words.add(new LocationInformation("Seegarten", ""));
-        words.add(new LocationInformation("Reventlou", ""));
-        words.add(new LocationInformation("Bellevue", ""));
-        words.add(new LocationInformation("Mönkeberg", ""));
-        words.add(new LocationInformation("Möltenort", ""));
-        words.add(new LocationInformation("Friedrichsort", ""));
-        words.add(new LocationInformation("Falckenstein", ""));
-        words.add(new LocationInformation("Laboe", ""));
-        words.add(new LocationInformation("Schilksee", ""));
-        words.add(new LocationInformation("Strande", ""));
+        words.add(new LocationInformation(getString(R.string.station), ""));
+        words.add(new LocationInformation(getString(R.string.lake_garden), ""));
+        words.add(new LocationInformation(getString(R.string.reventlou), ""));
+        words.add(new LocationInformation(getString(R.string.bellevue), ""));
+        words.add(new LocationInformation(getString(R.string.mountain), ""));
+        words.add(new LocationInformation(getString(R.string.moeltenort), ""));
+        words.add(new LocationInformation(getString(R.string.friedrichsort), ""));
+        words.add(new LocationInformation(getString(R.string.falckenstein), ""));
+        words.add(new LocationInformation(getString(R.string.laboe), ""));
+        words.add(new LocationInformation(getString(R.string.schilksee), ""));
+        words.add(new LocationInformation(getString(R.string.strande), ""));
 
         LocationInformationAdapter itemsAdapter = new LocationInformationAdapter(this, words, R.color.category_ferry_stations);
 

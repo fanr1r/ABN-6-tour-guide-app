@@ -38,11 +38,11 @@ public class LocationInformationAdapter extends ArrayAdapter<LocationInformation
             imageView.setVisibility(View.VISIBLE);
         }
 
-        TextView miwokTextView = (TextView) convertView.findViewById(R.id.name_text_view);
-        miwokTextView.setText(locationInformation.getLocationName());
+        TextView locationNameTextView = (TextView) convertView.findViewById(R.id.name_text_view);
+        locationNameTextView.setText(locationInformation.getLocationName());
 
-        TextView translationTextView = (TextView) convertView.findViewById(R.id.description_text_view);
-        translationTextView.setText(locationInformation.getDescription());
+        TextView descriptionTextView = (TextView) convertView.findViewById(R.id.description_text_view);
+        descriptionTextView.setText(locationInformation.getDescription());
 
         LinearLayout wordsViewGroup = (LinearLayout) convertView.findViewById(R.id.location_details_view_group);
         wordsViewGroup.setBackgroundResource(mColorResId);

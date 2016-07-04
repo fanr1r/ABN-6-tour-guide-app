@@ -14,14 +14,14 @@ public class EventsActivity extends AppCompatActivity {
         setContentView(R.layout.location_details_list);
 
         ArrayList<LocationInformation> words = new ArrayList<>();
-        words.add(new LocationInformation("Oper für Kinder", "03.07.2016 in der Niederdeutschen Bühne Kiel"));
-        words.add(new LocationInformation("Blame It On The Moondog", "03.07.2016 im Theater Kiel"));
-        words.add(new LocationInformation("Von Rimbaud bis Schubert", "04.07.2016 im Theater Kiel"));
-        words.add(new LocationInformation("FatburnX", "04.07.2016 im FitX"));
-        words.add(new LocationInformation("Orpheus & Eurydike", "06.07.2016 im Theater Kiel"));
-        words.add(new LocationInformation("Dr. Motte", "08.07.2016 im Sterntaucher"));
-        words.add(new LocationInformation("Mega90er live", "09.07.2016 im Minigolf am Norder"));
-        words.add(new LocationInformation("Orchesterakademie", "10.07.2016 im Schauspielhaus Kiel"));
+        words.add(new LocationInformation(getString(R.string.opera), getString(R.string.date_opera)));
+        words.add(new LocationInformation(getString(R.string.theater), getString(R.string.date_theater)));
+        words.add(new LocationInformation(getString(R.string.rimbaud), getString(R.string.date_rimbaud)));
+        words.add(new LocationInformation(getString(R.string.fatburn), getString(R.string.date_fatburn)));
+        words.add(new LocationInformation(getString(R.string.orpheus), getString(R.string.date_orpheus)));
+        words.add(new LocationInformation(getString(R.string.sterntaucher), getString(R.string.date_sterntaucher)));
+        words.add(new LocationInformation(getString(R.string.party), getString(R.string.date_party)));
+        words.add(new LocationInformation(getString(R.string.orchestra), getString(R.string.date_orchestra)));
 
         LocationInformationAdapter itemsAdapter = new LocationInformationAdapter(this, words, R.color.category_events);
 
